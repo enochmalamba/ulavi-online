@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions - ULAVi.online</title>
+    <style>
+      :root {
+        --bg: #f1f1f1;
+        --bg2: #f9f8f6;
+        --font: #000;
+        --grey: #f1f1f1;
+        --card-bg: #fff;
+        --text: #333;
+        --accent: #555;
+        --white: #fff;
+        --purple: purple;
+        --purple-faded: rgba(128, 0, 128, 0.5);
+        --shadow: rgba(0, 0, 0, 0.2);
+      }
+
+      .dark-theme {
+        --bg: #111;
+        --bg2: #000;
+        --font: #fff;
+        --grey: #222;
+        --card-bg: #333;
+        --text: #fff;
+        --accent: #aaa;
+        --white: #fff;
+        --purple: rgb(192, 48, 192);
+        --purple-faded: rgba(160, 33, 160, 0.5);
+        --shadow: rgba(255, 255, 255, 0.2);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: var(--font);
+        background: var(--bg);
+        min-height: 100vh;
+        padding: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: var(--card-bg);
+        border-radius: 12px;
+        box-shadow: 0 20px 40px var(--shadow);
+        overflow: hidden;
+      }
+
+      .header {
+        background: var(--card-bg);
+        color: var(--text);
+        padding: 40px;
+        text-align: center;
+        border-bottom: 1px solid var(--grey);
+      }
+
+      .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .header .emoji {
+        font-size: 3em;
+        margin-bottom: 15px;
+        display: block;
+      }
+
+      .header .subtitle {
+        font-size: 1.2em;
+        opacity: 0.8;
+        color: var(--accent);
+      }
+
+      .content {
+        padding: 40px;
+        background: var(--card-bg);
+      }
+
+      .effective-date {
+        background: var(--bg2);
+        border-left: 4px solid var(--purple);
+        padding: 15px 20px;
+        margin-bottom: 30px;
+        border-radius: 0 8px 8px 0;
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .welcome-section {
+        background: var(--grey);
+        color: var(--text);
+        padding: 25px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        text-align: center;
+        border: 1px solid var(--grey);
+      }
+
+      .section {
+        margin-bottom: 35px;
+        padding: 20px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .section:hover {
+        background: var(--bg2);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px var(--shadow);
+      }
+
+      .section h2 {
+        color: var(--text);
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--grey);
+      }
+
+      .section h3 {
+        color: var(--text);
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+
+      .section p {
+        margin-bottom: 15px;
+        color: var(--text);
+      }
+
+      .do-list,
+      .dont-list {
+        margin: 20px 0;
+      }
+
+      .do-list h3 {
+        color: #27ae60;
+      }
+
+      .dont-list h3 {
+        color: #e74c3c;
+      }
+
+      ul {
+        margin-left: 20px;
+        margin-bottom: 15px;
+      }
+
+      li {
+        margin-bottom: 8px;
+        padding-left: 5px;
+        color: var(--text);
+      }
+
+      .do-list li {
+        color: #27ae60;
+      }
+
+      .dont-list li {
+        color: #e74c3c;
+      }
+
+      .highlight {
+        background: var(--bg2);
+        border: 1px solid var(--grey);
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        color: var(--text);
+      }
+
+      .footer {
+        background: var(--bg2);
+        color: var(--text);
+        padding: 30px;
+        text-align: center;
+        margin-top: 40px;
+        border-top: 1px solid var(--grey);
+      }
+
+      .footer p {
+        margin-bottom: 10px;
+      }
+
+      .brand {
+        font-weight: bold;
+        color: var(--purple);
+      }
+
+      .theme-toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: var(--purple);
+        color: var(--white);
+        border: none;
+        padding: 10px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
+
+      .theme-toggle:hover {
+        background: var(--purple-faded);
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          margin: 10px;
+          border-radius: 8px;
+        }
+
+        .header {
+          padding: 25px;
+        }
+
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .content {
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+    <div class="container">
+      <div class="header">
+        <span class="emoji">📄</span>
+        <h1>Terms & Conditions</h1>
+        <div class="subtitle">ULAVi.online - Empowering African Creatives</div>
+      </div>
+
+      <div class="content">
+        <div class="effective-date">
+          <strong>Effective Date:</strong> [Insert Date]
+        </div>
+
+        <div class="welcome-section">
+          <strong>Welcome to ULAVi.online (UO)</strong> — a platform dedicated
+          to empowering African creatives.
+        </div>
+
+        <div class="section">
+          <h2>1. Acceptance of Terms</h2>
+          <p>
+            By accessing or using ULAVi.online, you agree to be bound by these
+            Terms & Conditions. If you do not agree, kindly do not use the site.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>2. Use of Platform</h2>
+          <p>
+            ULAVi is built for creative expression, community connection, and
+            artistic growth.
+          </p>
+
+          <div class="do-list">
+            <h3>You may:</h3>
+            <ul>
+              <li>Upload original content (images, audio, video)</li>
+              <li>Create talent or organization profiles</li>
+              <li>Interact respectfully with other users</li>
+              <li>Collaborate or contribute to the open-source project</li>
+            </ul>
+          </div>
+
+          <div class="dont-list">
+            <h3>You may not:</h3>
+            <ul>
+              <li>Upload offensive, copyrighted, or illegal material</li>
+              <li>Harass, spam, or exploit other users</li>
+              <li>Attempt to break or reverse-engineer the platform</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>3. Content Ownership</h2>
+          <p>
+            You retain full rights to the content you upload. However, by
+            posting, you grant ULAVi.online a non-exclusive license to display
+            and promote your work on the platform.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>4. Disclaimer</h2>
+          <div class="highlight">
+            <p>
+              This platform is in beta and may contain bugs or incomplete
+              features. Use at your own discretion. We are not liable for any
+              data loss or third-party misuse of content.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>5. Termination</h2>
+          <p>
+            We reserve the right to suspend accounts violating these terms or
+            acting against the spirit of the community.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2024 <span class="brand">ULAVi.online</span></p>
+        <p>Empowering African Creatives</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleTheme() {
+        const body = document.body;
+        const themeToggle = document.querySelector(".theme-toggle");
+
+        body.classList.toggle("dark-theme");
+
+        if (body.classList.contains("dark-theme")) {
+          themeToggle.textContent = " Light Mode";
+          localStorage.setItem("theme", "dark");
+        } else {
+          themeToggle.textContent = " Dark Mode";
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      // Load saved theme on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        const savedTheme = localStorage.getItem("theme");
+        const themeToggle = document.querySelector(".theme-toggle");
+
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-theme");
+          themeToggle.textContent = " Light Mode";
+        }
+      });
+    </script>
+  </body>
+</html>

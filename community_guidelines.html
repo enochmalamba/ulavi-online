@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Guidelines - ULAVi.online</title>
+    <style>
+        :root {
+            --bg: #f1f1f1;
+            --bg2: #f9f8f6;
+            --font: #000;
+            --grey: #f1f1f1;
+            --card-bg: #fff;
+            --text: #333;
+            --accent: #555;
+            --white: #fff;
+            --purple: purple;
+            --purple-faded: rgba(128, 0, 128, 0.5);
+            --shadow: rgba(0, 0, 0, 0.2);
+        }
+
+        .dark-theme {
+            --bg: #111;
+            --bg2: #000;
+            --font: #fff;
+            --grey: #222;
+            --card-bg: #333;
+            --text: #fff;
+            --accent: #aaa;
+            --white: #fff;
+            --purple: rgb(192, 48, 192);
+            --purple-faded: rgba(160, 33, 160, 0.5);
+            --shadow: rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--font);
+            background: var(--bg);
+            min-height: 100vh;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 20px 40px var(--shadow);
+            overflow: hidden;
+        }
+
+        .header {
+            background: var(--card-bg);
+            color: var(--text);
+            padding: 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--grey);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.8;
+            color: var(--accent);
+        }
+
+        .content {
+            padding: 40px;
+            background: var(--card-bg);
+        }
+
+        .intro-section {
+            background: var(--grey);
+            color: var(--text);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 1px solid var(--grey);
+        }
+
+        .section {
+            margin-bottom: 35px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            background: var(--bg2);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .section h2 {
+            color: var(--text);
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--grey);
+        }
+
+        .section h3 {
+            color: var(--text);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 5px;
+            color: var(--text);
+        }
+
+        .warning-section {
+            background: var(--bg2);
+            border: 1px solid var(--grey);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: var(--text);
+        }
+
+        .warning-section h3 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        .warning-section p {
+            color: var(--text);
+        }
+
+        .footer {
+            background: var(--bg2);
+            color: var(--text);
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 1px solid var(--grey);
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .brand {
+            font-weight: bold;
+            color: var(--purple);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--purple);
+            color: var(--white);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .theme-toggle:hover {
+            background: var(--purple-faded);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 8px;
+            }
+            
+            .header {
+                padding: 25px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+    <div class="container">
+        <div class="header">
+            <h1>Community Guidelines</h1>
+            <div class="subtitle">ULAVi.online - Building a Creative Community</div>
+        </div>
+
+        <div class="content">
+            <div class="intro-section">
+                <strong>ULAVi.online is more than a platform — it's a shared space.</strong>
+                <br><br>
+                To keep it vibrant, safe, and uplifting, we ask that you:
+            </div>
+
+            <div class="section">
+                <h2>Respect Everyone</h2>
+                <p>Treat all creators, developers, and contributors with kindness and dignity — regardless of background, gender, experience level, or artform.</p>
+            </div>
+
+            <div class="section">
+                <h2>Share Creatively & Authentically</h2>
+                <p>Upload content that's original, or that you have permission to share. Let the world feel your work — not someone else's.</p>
+            </div>
+
+            <div class="section">
+                <h2>No Hate, Harm, or Harassment</h2>
+                <div class="warning-section">
+                    <h3>We have zero tolerance for:</h3>
+                    <ul>
+                        <li>Hate speech</li>
+                        <li>Bullying</li>
+                        <li>Discrimination</li>
+                        <li>Exploitation</li>
+                    </ul>
+                    <p><strong>Violators may be banned.</strong></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Provide Constructive Feedback</h2>
+                <p>Feedback is encouraged — but keep it kind, specific, and growth-minded. Celebrate others as you'd want to be celebrated.</p>
+            </div>
+
+            <div class="section">
+                <h2>Collaborate with Care</h2>
+                <p>ULAVi is open-source and community-built. Contribute ideas, code, or creativity — but always cite sources and communicate transparently.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 <span class="brand">ULAVi.online</span></p>
+            <p>Building a Creative Community Together</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            body.classList.toggle('dark-theme');
+            
+            if (body.classList.contains('dark-theme')) {
+                themeToggle.textContent = 'Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggle.textContent = 'Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                themeToggle.textContent = 'Light Mode';
+            }
+        });
+    </script>
+</body>
+</html>

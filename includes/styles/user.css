@@ -1,0 +1,123 @@
+/* general styles */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* profile styles */
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* .profile button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  width: fit-content;
+} */
+
+.profile-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+
+  border: 1px solid;
+}
+
+.user-bio {
+  font-size: 15px;
+  text-align: center;
+  color: var(--accent);
+}
+
+.profile-nav {
+  display: flex;
+  /* border-top: 1px solid var(--accent); */
+  border-bottom: 1px solid var(--accent);
+  margin-bottom: 10px;
+}
+
+.profile-nav button {
+  padding: 5px;
+  font-size: 16px;
+  border: 0.5px solid transparent;
+  border-bottom: none;
+}
+.profile-nav button:hover {
+  background-color: var(--shadow);
+}
+.profile-nav button.active {
+  border: 0.5px solid var(--accent);
+  border-bottom: none;
+  background-color: transparent;
+}
+.user-settings {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.settings-grp h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--font);
+  line-height: 0.8;
+}
+
+.settings-grp p {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.settings-grp p span {
+  border: 1px solid var(--shadow);
+  padding: 10px 5px;
+  border-radius: 10px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  position: relative;
+  cursor: pointer;
+}
+
+.settings-grp p span i {
+  font-size: 18px;
+  margin-right: 5px;
+  position: absolute;
+  top: 0;
+  right: -27px;
+}
+
+/* hide the settings and activity so as to let js decide */
+
+.edit-profile,
+.account-settings,
+.user-activity {
+  display: none;
+}

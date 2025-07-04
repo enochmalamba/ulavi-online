@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ULAVi.online</title>
+    <style>
+        :root {
+            --bg: #f1f1f1;
+            --bg2: #f9f8f6;
+            --font: #000;
+            --grey: #f1f1f1;
+            --card-bg: #fff;
+            --text: #333;
+            --accent: #555;
+            --white: #fff;
+            --purple: purple;
+            --purple-faded: rgba(128, 0, 128, 0.5);
+            --shadow: rgba(0, 0, 0, 0.2);
+        }
+
+        .dark-theme {
+            --bg: #111;
+            --bg2: #000;
+            --font: #fff;
+            --grey: #222;
+            --card-bg: #333;
+            --text: #fff;
+            --accent: #aaa;
+            --white: #fff;
+            --purple: rgb(192, 48, 192);
+            --purple-faded: rgba(160, 33, 160, 0.5);
+            --shadow: rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--font);
+            background: var(--bg);
+            min-height: 100vh;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 20px 40px var(--shadow);
+            overflow: hidden;
+        }
+
+        .header {
+            background: var(--card-bg);
+            color: var(--text);
+            padding: 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--grey);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.8;
+            color: var(--accent);
+        }
+
+        .content {
+            padding: 40px;
+            background: var(--card-bg);
+        }
+
+        .intro-section {
+            background: var(--grey);
+            color: var(--text);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 1px solid var(--grey);
+        }
+
+        .section {
+            margin-bottom: 35px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            background: var(--bg2);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .section h2 {
+            color: var(--text);
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--grey);
+        }
+
+        .section h3 {
+            color: var(--text);
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: var(--text);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 5px;
+            color: var(--text);
+        }
+
+        .highlight-section {
+            background: var(--bg2);
+            border: 1px solid var(--grey);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            color: var(--text);
+        }
+
+        .highlight-section h3 {
+            color: var(--purple);
+            margin-bottom: 10px;
+        }
+
+        .contact-section {
+            background: var(--grey);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .contact-section .email {
+            font-family: 'Courier New', monospace;
+            background: var(--card-bg);
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid var(--grey);
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--purple);
+            font-weight: bold;
+        }
+
+        .footer {
+            background: var(--bg2);
+            color: var(--text);
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 1px solid var(--grey);
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .brand {
+            font-weight: bold;
+            color: var(--purple);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--purple);
+            color: var(--white);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .theme-toggle:hover {
+            background: var(--purple-faded);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 8px;
+            }
+            
+            .header {
+                padding: 25px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+    <div class="container">
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">ULAVi.online - Protecting Your Privacy</div>
+        </div>
+
+        <div class="content">
+            <div class="intro-section">
+                <strong>Your privacy matters.</strong>
+                <br><br>
+                This privacy policy explains what data we collect and how we use it.
+            </div>
+
+            <div class="section">
+                <h2>1. Data We Collect</h2>
+                <ul>
+                    <li>Account details (name, email, username)</li>
+                    <li>Uploaded content (images, audio, etc.)</li>
+                    <li>Usage data (which pages you visit, error reports)</li>
+                    <li>Optional feedback (surveys, bug reports)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>2. How We Use It</h2>
+                <ul>
+                    <li>To deliver platform functionality</li>
+                    <li>To improve features, design, and UX</li>
+                    <li>To respond to bugs or community suggestions</li>
+                    <li>To notify you about key updates (if you opt in)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. What We Don't Do</h2>
+                <div class="highlight-section">
+                    <h3>Our Commitments:</h3>
+                    <ul>
+                        <li>We don't sell your data</li>
+                        <li>We don't spam your inbox</li>
+                        <li>We don't access your content without reason</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>4. Third-Party Tools</h2>
+                <p>We may use services like GitHub, Google Fonts, or analytics tools to improve development and design. These tools follow their own privacy policies.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Your Control</h2>
+                <p>You can always contact us to:</p>
+                <ul>
+                    <li>Request a data export</li>
+                    <li>Request account deletion</li>
+                    <li>Ask how your data is used</li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <p><strong>For questions, contact:</strong></p>
+                <div class="email">privacy@ulavi.online</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 <span class="brand">ULAVi.online</span></p>
+            <p>Your Privacy, Our Priority</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            body.classList.toggle('dark-theme');
+            
+            if (body.classList.contains('dark-theme')) {
+                themeToggle.textContent = 'Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggle.textContent = 'Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const themeToggle = document.querySelector('.theme-toggle');
+            
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark-theme');
+                themeToggle.textContent = 'Light Mode';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+h4 {
+  font-weight: 500;
+}
+input {
+  font-size: 16px;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--accent);
+  color: var(--font);
+  background: none;
+}
+
+input {
+  field-sizing: content;
+  resize: none;
+  max-height: 200px;
+}
+
+.comments {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment {
+  display: flex;
+  align-items: start;
+  gap: 6px;
+}
+.comment img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.comment-body {
+  width: calc(100% - 41px);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+}
+.comment-content {
+  font-size: 16px;
+}
